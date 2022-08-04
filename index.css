@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 12px;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-card {
+  width: 600px;
+  height: 450px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+}
+
+.product-card-image {
+  width: 300px;
+}
+
+.product-card-details {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.product-card-image img {
+  max-inline-size: 100%;
+  block-size: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.product-card-label {
+  color: #6c7289;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: 5px;
+}
+
+.product-card-title {
+  color: #1c232b;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.product-card-details p {
+  color: #6c7289;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: calc(1rem + 0.125em); /* 14px */
+  line-height: calc(1em + 0.25rem * 3); /* 23px */
+  margin: 0;
+  margin-top: 24px;
+}
+
+.product-card-price {
+  display: flex;
+  align-items: center;
+  margin-top: 29px;
+}
+
+.product-card-price .current {
+  color: #3d8168;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.product-card-price .actual {
+  margin-left: 19px;
+  color: #6c7289;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: calc(0.25em + 0.25rem * 3);
+  text-decoration: line-through;
+}
+
+button {
+  margin-top: 30px;
+  background-color: #3d8168;
+  border-radius: 8px;
+  padding: 15px 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: calc(1rem + 0.125em);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:active {
+  background-color: #1a4032;
+}
+
+button img {
+  margin-right: 0.8em;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .product-card {
+    flex-direction: column;
+  }
+}
