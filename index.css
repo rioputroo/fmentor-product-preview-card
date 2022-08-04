@@ -125,6 +125,21 @@ button img {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   .product-card {
+    width: 343px;
+    height: auto;
     flex-direction: column;
+  }
+
+  .product-card-image {
+    width: 100%;
+  }
+
+  .product-card-image img {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+
+  .product-card-details {
+    width: 100%;
   }
 }
